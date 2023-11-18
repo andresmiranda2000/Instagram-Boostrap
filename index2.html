@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Iys5Td2UE4Ea6MkLQdqi/89GfvMztsYpBU8jH8h+E9gl9x6+9EuyDt7rxs9Zk8s4eC21+cc1aZUqZWy5GiMVCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .custom-card {
+            max-width: 600px; 
+            margin-bottom: 20px; 
+        }
+    </style>
+    <title>Instagram Photo Feed</title>
+</head>
+<body>
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+            <img src="assets/iglogo.png" alt="Logo" width="150" height="30" class="d-inline-block align-text-top">
+        </a>
+        <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create new post</button>
+            
+            <div class="btn-group ms-2">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create new message</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text">add caption of your post here</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fas fa-table-cells text-secondary"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="index2.html"><i class="fas fa-square text-secondary"></i></a>
+    </li>
+</ul>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div class="card custom-card mx-auto">
+                <div class="card-header d-flex justify-content-between">
+                    <h2 class="card-title">New York</h2>
+                    <p class="card-subtitle text-muted text-end">19/10/23</p>
+                </div>
+                <img src="assets/new1.jpg" alt="Imagen 1" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text"><strong>204 Me Gusta</strong></p>
+                    <p class="card-text">Ciudad de Nueva York. <strong>#NYC</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mx-auto">
+            <div class="card custom-card mx-auto">
+                <div class="card-header d-flex justify-content-between">
+                    <h2 class="card-title">Paris</h2>
+                    <p class="card-subtitle text-muted text-end">18/10/23</p>
+                </div>
+                <img src="assets/new1.jpg" alt="Imagen 2" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text"><strong>204 Me Gusta</strong></p>
+                    <p class="card-text">Ciudad de París. <strong>#Paris</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mx-auto">
+            <div class="card custom-card mx-auto">
+                <div class="card-header d-flex justify-content-between">
+                    <h2 class="card-title">Quito</h2>
+                    <p class="card-subtitle text-muted text-end">17/10/23</p>
+                </div>
+                <img src="assets/new1.jpg" alt="Imagen 3" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text"><strong>204 Me Gusta</strong></p>
+                    <p class="card-text">Ciudad de Quito. <strong>#Quito</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/76a6755fe0.js" crossorigin="anonymous"></script>
+</body>
+</html>
